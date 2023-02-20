@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 body {
     background-color: #3A353D;
+    margin: 0;
 }
 
+/*HEADER*/
 nav {
     color:white;
     position: absolute;
@@ -16,7 +20,7 @@ nav .logo .beer {
     width: 53px;
     height: 53px;
     left: 130px;
-    top: 35px;
+    top: 0px;
 }
 nav .logo .text {
     position: absolute;
@@ -24,7 +28,7 @@ nav .logo .text {
     width: 135px;
     height: 45px;
     left: 193px;
-    top: 43px;
+    top: 0px;
 
     font-family: 'Anton';
     font-style: normal;
@@ -41,7 +45,7 @@ nav ul {
     width: 506.47px;
     height: 24px;
     left: 969px;
-    top: 53px;
+    top: 0px;
 }
 nav ul li {
     display: inline;
@@ -49,4 +53,61 @@ nav ul li {
     text-transform: uppercase;
 
     color: #FFFFFF;
+}
+/*MAIN*/
+.part-1 .beer{
+    position: absolute;
+    width: 745px;
+    height: 745px;
+    left: 214px;
+    top: 183px;
+}
+.part-1 h1 {
+    position: absolute;
+    width: 477px;
+    height: 303px;
+    left: 1054px;
+    top: 260px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 106px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.part-1 h1 span {
+    font-family: 'Underdog';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 92px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.part-1 .text {
+    position: absolute;
+    width: 461.58px;
+    height: 94px;
+    left: 1054px;
+    top: 648px;
+}
+.part-1 .ellipse {
+    width: 600px;
+}
+.part-1 .more {
+    position: absolute;
+    width: 218.44px;
+    height: 66px;
+    left: 1091.04px;
+    top: 775px;
+    background: #B9A1A1;
+    border-radius: 35px;
+}
+.part-1 .more .text2 {
+    position: relative;
+    top: 34%;
+    left: 20%;
 }
