@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+    background-color: #3A353D;
+}
+
+nav {
+    color:white;
+    position: absolute;
+    width: 1345.47px;
+    height: 53px;
+    left: 130px;
+    top: 35px;
+}
+nav .logo .beer {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 130px;
+    top: 35px;
+}
+nav .logo .text {
+    position: absolute;
+    text-transform: uppercase;
+    width: 135px;
+    height: 45px;
+    left: 193px;
+    top: 43px;
+
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+
+}
+nav ul {
+    position: absolute;
+    width: 506.47px;
+    height: 24px;
+    left: 969px;
+    top: 53px;
+}
+nav ul li {
+    display: inline;
+    margin: 15px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
