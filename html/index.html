@@ -3,6 +3,31 @@
 <head>
     <link rel="stylesheet" href="../css/index.css" />
     <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+    
+        if (this.hash !== "") {
+        event.preventDefault();
+
+    
+        var hash = this.hash;
+
+    
+    
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+    
+            window.location.hash = hash;
+        });
+        }
+    });
+    });
+    </script>
 </head>
 <body>
     <header>
@@ -26,7 +51,7 @@
             <img class="beer" src="../src/main_beer.svg">
             <h1>Я люблю <span>пиво</span><p style="margin:0"> а ти?</p></h1>
             <img class="text" src="../src/наша команда шляхом.svg">
-            <a class="more" href="#"><img class="text2" src="../src/детальніше.svg" alt=""></a>
+            <a class="more" href="#more-link"><img class="text2" src="../src/детальніше.svg" alt=""></a>
         </div>
         <div class="part-2">
             <span class="text">
@@ -37,7 +62,7 @@
             <img class="ellipse2" src="../src/Ellipse 2.png">
         </div>
         <div class="part-3">
-            <h1>факти про пиво</h1>
+            <h1 id="more-link">факти про пиво</h1>
             <h2>які здивували навіть нас<br/>(справжніх поціновувачів пива)</h2>
             <img class="beer-up" src="../src/пиво зверху.svg">
             <img class="text" src="../src/текст список.svg">
