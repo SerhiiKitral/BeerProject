@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+body {
+    background-color: #3A353D;
+    margin: 0;
+}
+/*HEADER*/
+nav {
+    color:white;
+    position: absolute;
+    width: 1345.47px;
+    height: 53px;
+    left: 130px;
+    top: 45px;
+}
+nav .logo .beer {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 130px;
+    top: 0px;
+}
+nav .logo .text {
+    position: absolute;
+    text-transform: uppercase;
+    width: 135px;
+    height: 45px;
+    left: 193px;
+    top: 0px;
+
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+
+}
+nav ul {
+    position: absolute;
+    width: 506.47px;
+    height: 24px;
+    left: 969px;
+    top: 0px;
+}
+nav ul li {
+    display: inline;
+    margin: 15px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.part-1 .ellipse4 {
+    position: absolute;
+    width: 676px;
+    left: -399px;
+    top: -136px;
+    height: 1224px;
+}
+
+.part-2 .ellipse5 {
+    position: absolute;
+    width: 360px;
+    height: 920px;
+    left: 1466px;
+    top: 511px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 179px;
+    left: 0px;
+    top: 2712px;
+
+    background: #27242A;
+}
+footer .youtube{
+    position: absolute;
+    width: 154px;
+    height: 41px;
+    left: 125px;
+    top: 69px;
+}
+footer p{
+    position: absolute;
+    width: 417px;
+    height: 21px;
+    left: 1259px;
+    top: 71px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
