@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+body {
+    background-color: #3A353D;
+    margin: 0;
+}
+/*HEADER*/
+nav {
+    color:white;
+    position: absolute;
+    width: 1345.47px;
+    height: 53px;
+    left: 130px;
+    top: 45px;
+    z-index: 1;
+}
+nav .logo .beer {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 130px;
+    top: 0px;
+}
+nav .logo .text {
+    position: absolute;
+    text-transform: uppercase;
+    width: 135px;
+    height: 45px;
+    left: 193px;
+    top: 0px;
+
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+
+}
+nav ul {
+    position: absolute;
+    width: 506.47px;
+    height: 24px;
+    left: 969px;
+    top: 0px;
+}
+nav ul li {
+    display: inline;
+    margin: 15px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+/*MAIN*/
+main .splash{
+    width: 100%;
+    height: 1307px;
+}
+main .beer-up{
+    position: absolute;
+    top: 128px;
+    width: 50%;
+    left: -270px;
+}
+main .steak-up{
+    position: absolute;
+    left: 1150px;
+    top: -26px;
+    width: 756px;
+}
+main .line{
+    position: absolute;
+    left: 50%;
+    top: 169px;
+    height: 950px;
+    width:2px;
+}
+main .text1{
+    position: absolute;
+    text-decoration: none;
+    width: 313px;
+    height: 357px;
+    left: 559px;
+    top: 229px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    font-size: 110px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+main .text2{
+    position: absolute;
+    text-decoration: none;
+    width: 313px;
+    height: 357px;
+    left: 1079px;
+    top: 458px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    font-size: 110px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+
+
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 179px;
+    left: 0px;
+    top: 1245px;
+
+    background: #27242A;
+}
+footer .youtube{
+    position: absolute;
+    width: 154px;
+    height: 41px;
+    left: 125px;
+    top: 69px;
+}
+footer p{
+    position: absolute;
+    width: 417px;
+    height: 21px;
+    left: 1259px;
+    top: 71px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
