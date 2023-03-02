@@ -13,7 +13,7 @@ nav {
     width: 1345.47px;
     height: 53px;
     left: 130px;
-    top: 35px;
+    top: 45px;
 }
 nav .logo .beer {
     position: absolute;
@@ -101,7 +101,7 @@ nav ul li {
     position: absolute;
     width: 218.44px;
     height: 66px;
-    left: 1091.04px;
+    left: 1051.04px;
     top: 775px;
     background: #B9A1A1;
     border-radius: 35px;
@@ -110,4 +110,155 @@ nav ul li {
     position: relative;
     top: 34%;
     left: 20%;
+}
+
+
+
+.part-2 .text{
+    position: absolute;
+    width: 549px;
+    height: 501px;
+    left: 214px;
+    top: 1151px;
+}
+.part-2 .text h1{
+    position: absolute;
+    width: 500px;
+    height: 84px;
+    left: 43px;
+    top: 2px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.part-2 .text p{
+    position: absolute;
+    width: 549px;
+    height: 364px;
+    left: 130px;
+    top: 120px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+}
+.part-2 .team{
+    position: absolute;
+    width: 494px;
+    height: 602px;
+    left: 1105px;
+    top: 1144px;
+}
+.part-2 .ellipse2{
+    position: absolute;
+    width: 233px;
+    left: 1673px;
+    top: 1009px;
+}
+
+
+
+.part-3 h1{
+    position: absolute;
+    width: 680px;
+    height: 84px;
+    left: 346px;
+    top: 1900px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.part-3 h2{
+    position: absolute;
+    width: 564px;
+    height: 64px;
+    left: 346px;
+    top: 2024px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.part-3 .beer-up{
+    position: absolute;
+    width: 439px;
+    height: 435px;
+    left: 456px;
+    top: 2142px;
+}
+.part-3 .text{
+    position: absolute;
+    width: 537px;
+    height: 310px;
+    left: 1023px;
+    top: 2165px;
+}
+.part-3 .ellipse3{
+    position: absolute;
+    width: 719px;
+    height: 521px;
+    left: -369.63px;
+    top: 2358px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 179px;
+    left: 0px;
+    top: 2712px;
+
+    background: #27242A;
+}
+footer .youtube{
+    position: absolute;
+    width: 154px;
+    height: 41px;
+    left: 125px;
+    top: 69px;
+}
+footer p{
+    position: absolute;
+    width: 417px;
+    height: 21px;
+    left: 1259px;
+    top: 71px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
