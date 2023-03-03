@@ -58,10 +58,10 @@ nav ul li {
 
 .choose_beer p{
     position: absolute;
-    width: 587px;
+    width: 700px;
     height: 84px;
-    left: 507px;
-    top: 202px;
+    left: 530px;
+    top: 120px;
 
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -73,13 +73,6 @@ nav ul li {
     text-transform: uppercase;
 
     color: #FFFFFF;
-}
-.group1{
-    position: absolute;
-    width: 1350px;
-    height: 500px;
-    left: 125px;
-    top: 369px;
 }
 .amber_ale{
     position: absolute;
@@ -95,7 +88,7 @@ nav ul li {
     position: absolute;
     width: 401.19px;
     height: 500px;
-    left: 599.41px;
+    left: 635.41px;
     top: 369px;
     
     background: #B9A1A1;
@@ -105,7 +98,7 @@ nav ul li {
     position: absolute;
     width: 401.19px;
     height: 500px;
-    left: 1073.81px;
+    left: 1150.81px;
     top: 369px;
 
     background: #B9A1A1;
@@ -115,11 +108,606 @@ nav ul li {
     position: relative;
     width: 283px;
     height: 283px;
-    left: 181px;
-    top: 0px;
+    left: 56px;
+    top: 45px;
 
     background: url(image.png);
     border-radius: 40px;
+}
+.amber_ale p{
+    position: absolute;
+    width: 299px;
+    height: 36px;
+    left: 51px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.amber_ale_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.amber_ale_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+.brown_ale img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 58.59px;
+    top: 48px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.brown_ale p{
+    position: absolute;
+    width: 177px;
+    height: 21px;
+    left: 111.59px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+.button_brown_ale {
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    text-decoration: none;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+
+}
+.button_brown_ale a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+
+}
+.dark_lager{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 1150.81px;
+    top: 369px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.dark_lager img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 62.19px;
+    top: 45px;
+    
+    background: url(image.png);
+    border-radius: 40px;
+}
+.dark_lager p{
+    position: absolute;
+    width: 204px;
+    height: 21px;
+    left: 98.19px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.dark_lager_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+
+}
+.dark_lager_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+.ipa{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 126px;
+    top: 963px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.ipa img{
+    position: absolute;
+    width: 176.31px;
+    height: 283px;
+    left: 109px;
+    top: 45px;
+
+    background: url(image.png);
+}
+.ipa p{
+    position: absolute;
+    width: 81px;
+    height: 31px;
+    left: 160px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.ipa_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.ipa_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+.light_lager{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 635.41px;
+    top: 963px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.light_lager img{
+    position: absolute;
+    width: 283px;
+    height: 272px;
+    left: 57px;
+    top: 56px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.light_lager p{
+    position: absolute;
+    width: 140px;
+    height: 21px;
+    left: 138.59px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.light_lager_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.light_lager_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+.porter {
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 1150.81px;
+    top: 963px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.porter img{
+    position: absolute;
+    width: 172.37px;
+    height: 283px;
+    left: 113px;
+    top: 56px;
+}
+.porter p{
+    position: absolute;
+    width: 140px;
+    height: 21px;
+    left: 130.59px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.porter_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.porter_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+.stout{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 126px;
+    top: 1557px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.stout img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 56px;
+    top: 45px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.stout p{
+    position: absolute;
+    width: 141px;
+    height: 17px;
+    left: 128px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.stout_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.stout_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+.wheat_beer{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 635.41px;
+    top: 1557px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.wheat_beer img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 58.59px;
+    top: 45px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.wheat_beer p{
+    position: absolute;
+    width: 121px;
+    height: 21px;
+    left: 139.5px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.wheat_beer_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.wheat_beer_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
 }
 
 
@@ -129,6 +717,7 @@ footer{
     height: 179px;
     left: 0px;
     top: 2712px;
+    margin-top: -100px;
 
     background: #27242A;
 }
