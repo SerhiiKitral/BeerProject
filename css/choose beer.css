@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
-
+html{
+    user-select: none;    
+}
+img {
+    pointer-events: none
+}
 body {
     background-color: #3A353D;
     margin: 0;
@@ -653,7 +658,7 @@ nav ul li {
 }
 .wheat_beer p{
     position: absolute;
-    width: 121px;
+    width: 122px;
     height: 21px;
     left: 139.5px;
     top: 340px;

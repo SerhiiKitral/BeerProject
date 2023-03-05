@@ -5,6 +5,14 @@ body {
     background-color: #3A353D;
     margin: 0;
 }
+
+html{
+    user-select: none;    
+}
+img {
+    pointer-events: none;
+}
+
 /*HEADER*/
 nav {
     color:white;
@@ -54,19 +62,382 @@ nav ul li {
     color: #FFFFFF;
 }
 
+/*MAIN*/
+.topnav {
+    position: absolute;
+    overflow: hidden;
+    width: 1000px;
+    top: 300px;
+    right: 50%;
+    left: 22.5%;
+    border: none;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+  
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+    
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  .topnav input[type=text] {
+    letter-spacing: 0.1em;
+    background-position: 30px 22px;
+    background-image: url(../src/пошук.svg);
+    background-repeat: no-repeat;
+    text-indent: 56px;
+    text-transform: uppercase;
+    padding: 25px;
+    border-radius: 80px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 945px;
+    font-family: 'Roboto Slab';
+  }
+
+  #result ul{
+    letter-spacing: 0.1em;
+    color: #757575;
+    margin-top: -31px;
+    padding-top: 10px;
+    list-style-type: none;
+    text-indent: 41px;
+    background-color: white;
+    font-family: 'Roboto Slab';
+    font-size: large;
+    text-transform: uppercase;
+    border-radius: 1px 1px 34px 34px;
+  }
+  #result li{
+    border-bottom: 1px solid #B9A1A1;
+    padding: 20px 0 10px 0px;
+    margin-right: 41px;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+
+
+.part-2 h1{
+    position: absolute;
+width: 782px;
+height: 84px;
+left: 562px;
+top: 1293px;
+
+font-family: 'Roboto Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 84px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+.риба{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 256px;
+    top: 1557px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.риба img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 56px;
+    top: 45px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.риба p{
+    position: absolute;
+    width: 141px;
+    height: 17px;
+    left: 128px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.риба_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.риба_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.мясо{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 1228px;
+    top: 1557px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.мясо img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 58.59px;
+    top: 45px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.мясо p{
+    position: absolute;
+    width: 129px;
+    height: 21px;
+    left: 139.5px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.мясо_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.мясо_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.піца{
+    position: absolute;
+    width: 401.19px;
+    height: 500px;
+    left: 741.41px;
+    top: 1557px;
+
+    background: #B9A1A1;
+    border-radius: 50px;
+}
+.піца img{
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    left: 58.59px;
+    top: 45px;
+
+    background: url(image.png);
+    border-radius: 40px;
+}
+.піца p{
+    position: absolute;
+    width: 129px;
+    height: 21px;
+    left: 139.5px;
+    top: 340px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.піца_button{
+    position: absolute;
+    width: 231px;
+    height: 52px;
+    left: 85px;
+    top: 400px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #B9A1A1;
+    border: 0px solid #000;
+    
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+.піца_button a{
+    position: absolute;
+    width: 137px;
+    height: 26px;
+    left: 47px;
+    top: 15px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+
 .part-1 .ellipse4 {
     position: absolute;
-    width: 676px;
+    width: 584px;
     left: -399px;
     top: -136px;
-    height: 1224px;
+    height: 1125px;
 }
 
 .part-2 .ellipse5 {
     position: absolute;
     width: 360px;
     height: 920px;
-    left: 1466px;
+    left: 1546px;
     top: 511px;
 }
 
@@ -75,7 +446,7 @@ footer{
     width: 100%;
     height: 179px;
     left: 0px;
-    top: 2712px;
+    top: 2236px;
 
     background: #27242A;
 }

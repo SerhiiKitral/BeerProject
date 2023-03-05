@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+html{
+    user-select: none;    
+}
+img {
+    pointer-events: none
+}
 body {
     background-color: #3A353D;
     margin: 0;
