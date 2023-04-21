@@ -1,8 +1,11 @@
 from RukavichkaParser import getBeerFromRukavichka
 from PravdaParser import getBeerFromPravdaInBottles
 from PravdaParser import getBeerFromPravdaInCans
+from ClearDatabase import database_clear
 import sqlite3
 
+
+database_clear()
 
 beerForDB = []
 
