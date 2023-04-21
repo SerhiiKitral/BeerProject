@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from BeerModel import Beer
+import re
+
 
 def getBeerFromRukavichka(array):
     # Завантаження сторінки
@@ -13,7 +15,6 @@ def getBeerFromRukavichka(array):
     # Знаходимо всі товари зі списку
     items = soup.find_all('div', {'product-layout product-grid col-6 col-md-4 col-lg-4'})
 
-
     # Проходимося по кожному товару та виводимо його дані на екран
     for item in items:
         price = item.find('div', {'class': 'fm-module-price-bottom'}).text.strip()
@@ -22,12 +23,26 @@ def getBeerFromRukavichka(array):
         img_url = item.find('img', {'class': 'img-fluid'})['src']
 
         # Щось придумати і замінити
-        description = f"{title} is the best beer in the world!!!"
+
         shopName = "Рукавичка"
-        beerType = "звичайне смачне пиво для бидла"
+        beerType = "Звичайне смачне пиво для бидла"
 
+        title = title.replace(",", ".")
+        title = re.sub(r'\d+(\.\d+)?%', '', title)
 
-        #Змінити
-        volume = 0
+        # Extract numbers with "Л" symbol and remove them from the original string
+        volume = re.findall(r'\b(?:\d+|\d+\.\d+|0*\d+(?:\.0+)?)\s*Л\b', title)
+        title = re.sub(r'\b(?:\d+|\d+\.\d+|0*\d+(?:\.0+)?)\s*Л\b', '', title)
 
-        array.append(Beer(title, price, img_url, link, description, shopName, beerType, volume))
+        # Remove any remaining numbers from the string
+        title = re.sub(r'\d+(\.\d+)?', '', title)
+
+        title = re.sub(r'\s+', ' ', title)
+
+        title = title.strip()
+        description = f"{title} is the best beer in the world!!!"
+
+        array.append(Beer(title, price, img_url, link, description, shopName, beerType, volume[0]))
+
+    return array
+
