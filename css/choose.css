@@ -9,74 +9,75 @@ header img{
 }
 
 body {
+    background: url("../src/Splash.png") no-repeat scroll;
+    background-size: cover;
     background-color: #3A353D;
     margin: 0;
 }
 /*HEADER*/
-nav {
-    color:white;
-    position: absolute;
-    width: 1345.47px;
-    height: 53px;
-    left: 130px;
-    top: 45px;
-    z-index: 1;
+a{
+    text-decoration:none;
+    color: #FFFFFF;
 }
-nav .logo .beer {
-    position: absolute;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    width:1345px;
+    margin: auto;
+}
+header .beer{
     width: 53px;
     height: 53px;
-    left: 130px;
-    top: 0px;
 }
-nav .logo .text {
-    position: absolute;
+header .logo{
+    display: flex;
+    align-items: flex-end;
+}
+header .text{
     text-transform: uppercase;
-    width: 135px;
-    height: 45px;
-    left: 193px;
-    top: 0px;
-
     font-family: 'Anton';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
-
+    padding-left: 5px;
     color: rgba(255, 255, 255, 0.5);
-
-
 }
-nav ul {
-    position: absolute;
-    width: 506.47px;
-    height: 24px;
-    left: 969px;
-    top: 0px;
+header nav{
+    display: flex;
+    align-items: center;
 }
-nav ul li {
-    display: inline;
-    margin: 15px;
+header ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.095em;
     text-transform: uppercase;
-
-    color: #FFFFFF;
+}
+header li{
+    margin-left: 20px;
+    margin-top: 5px;
 }
 /*MAIN*/
 main .splash{
-    width: 100%;
-    height: 1307px;
+    position: absolute;
+    left: 0%;
+    top: 75px;
+    z-index: -1;
 }
 main .beer-up{
-    position: absolute;
-    top: 128px;
-    width: 50%;
-    left: -270px;
+    width: 35%;
+    z-index: -1;
 }
 main .steak-up{
-    position: absolute;
-    left: 1150px;
-    top: -26px;
-    width: 756px;
+    padding-top: 40px;
+    width: 35%;
 }
 main .line{
     position: absolute;
@@ -88,10 +89,7 @@ main .line{
 main .text1{
     position: absolute;
     text-decoration: none;
-    width: 313px;
-    height: 357px;
-    left: 559px;
-    top: 229px;
+    padding-top: 470px;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
@@ -122,28 +120,18 @@ main .text2{
 
 
 footer{
-    position: absolute;
-    width: 100%;
-    height: 179px;
-    left: 0px;
-    top: 1245px;
-
     background: #27242A;
+    margin-top: 102px;
 }
-footer .youtube{
-    position: absolute;
-    width: 154px;
-    height: 41px;
-    left: 125px;
-    top: 69px;
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 79px;
+    padding-bottom: 79px;
+    width: 1350px;
 }
-footer p{
-    position: absolute;
-    width: 417px;
-    height: 21px;
-    left: 1259px;
-    top: 71px;
-
+footer .content p{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
