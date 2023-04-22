@@ -254,8 +254,8 @@ footer .content{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding-top: 79px;
-    padding-bottom: 79px;
+    padding-top: 59px;
+    padding-bottom: 59px;
     width: 1350px;
 }
 footer .content p{
