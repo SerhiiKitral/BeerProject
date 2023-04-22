@@ -7,74 +7,85 @@
     <script>
     $(document).ready(function(){
     $("a").on('click', function(event) {
-
-    
         if (this.hash !== "") {
         event.preventDefault();
-
-    
         var hash = this.hash;
-
-    
-    
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 800, function(){
-    
-    
             window.location.hash = hash;
         });
         }
     });
     });
-
-    
-
     </script>
 </head>
 <body>
-    <header>
-        <nav>
+    <div id="part-1">
+        <header>
             <div class="logo">
                 <img class="beer" src="../src/logo_beer.svg">
                 <span class="text">shavky.org</span>
             </div>
-			<ul>
-				<li><a href="#"><img src="../src/головна.svg"></a></li>
-				<li><a href="choose.html"><img src="../src/пиво і страви.svg" ></a></li>
-				<li><a href="#"><img src="../src/де купити.svg" style="height:13.5px"></a></li>
-                <li><a href="#"><img src="../src/акції.svg" style="height:16px"></a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-        <div class="part-1">
-            <img src="../src/Ellipse 1.png" alt="" class="ellipse">
-            <img class="beer" src="../src/main_beer.svg">
-            <h1>Я люблю <span>пиво</span><p style="margin:0"> а ти?</p></h1>
-            <img class="text" src="../src/наша команда шляхом.svg">
-            <a class="more" href="#more-link"><img class="text2" src="../src/детальніше.svg" alt=""></a>
+            <nav>
+            <ul>
+                <li><a href="#" style="background: rgba(217, 217, 217, 0.47);
+                    border-radius: 40px;padding: 10px 26px 10px 26px;">головна</a></li>
+                <li><a href="choose.html">пиво і страви</a></li>
+                <li><a href="#">де купити</a></li>
+            </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="left">
+                <img src="../src/main_beer.svg" alt="">
+            </div>
+            <div class="right">
+                <h1>я люблю <span>пиво</span><br/> а ти?</h1>
+                <p>наша команда шляхом довгих досліджень визначила, що споживання пива значно покращує ваш настрій</p>
+                <a href="#more-link"><img class="text2" src="../src/детальніше.svg" alt=""></a>
+            </div>
         </div>
-        <div class="part-2">
-            <span class="text">
+        <img src="../src/Ellipse 1.png" alt="" class="ellipse">
+    </div>
+    <div id="part-2">
+        <div class="content">
+            <div class="left">
                 <h1>про нас</h1>
                 <p>Колись давно в далекому 2021 році шестеро, тоді ще незнайомих пошановувачів пива, вирішили подати свої документи в один університет, а точніше, у Львівський національний університет імені Івана Франка.<br/><br/>Перша їхня зустріч відбулася в Карпатах, на одному з найвизначніших івентів у житті студентів, посвяті. Їх об’єднали однакові вподобання, любов до пива та, як не дивно, програмування. Так розпочалась наша історія, завдяки якій вам зараз доступний даний проєкт.</p>
-            </span>
-            <img class="team" src="../src/фото команди.svg">
-            <img class="ellipse2" src="../src/Ellipse 2.png">
+            </div>
+            <div class="right">
+                <!-- проти бешти -->
+                <!-- <div class="hide"></div> -->
+                <img src="../src/фото команди.svg">
+            </div>
         </div>
-        <div class="part-3">
+        <img class="ellipse" src="../src/Ellipse 2.png">
+    </div>
+    <div id="part-3">
+        <div class="title">
             <h1 id="more-link">факти про пиво</h1>
             <h2>які здивували навіть нас<br/>(справжніх поціновувачів пива)</h2>
-            <img class="beer-up" src="../src/пиво зверху.svg">
-            <img class="text" src="../src/текст список.svg">
-            <img class="ellipse3" src="../src/Ellipse 3.png">
         </div>
-	</main>
-	<footer>
-		<img class="youtube" src="../src/youtube.svg" alt="">
-        <p>© 2023 shavky.org - Усі права захищено</p>
+        <div class="content">
+            <div class="left">
+                <img src="../src/пиво зверху.svg">
+            </div>
+            <div class="right">
+                <ol type="1">
+                    <li>Пиво вигадали жінки.</li>
+                    <li>Калорійність пива нижче, ніж у яблучного соку, кока-коли, інших газованих напоїв з цукром і молока.</li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+        <img class="ellipse" src="../src/Ellipse 3.png">
+    </div>
+    <footer>
+        <div class="content">
+		    <img src="../src/youtube.svg" alt="">
+            <p>© 2023 shavky.org - Усі права захищено</p>
+        </div>
 	</footer>
 </body>
 </html>

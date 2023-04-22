@@ -11,70 +11,83 @@ body {
     background-color: #3A353D;
     margin: 0;
 }
-
-/*HEADER*/
-nav {
-    color:white;
-    position: absolute;
-    width: 1345.47px;
-    height: 53px;
-    left: 130px;
-    top: 45px;
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
 }
-nav .logo .beer {
-    position: absolute;
+a{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+
+#part-1{
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    width:1345px;
+    margin: auto;
+}
+header .beer{
     width: 53px;
     height: 53px;
-    left: 130px;
-    top: 0px;
 }
-nav .logo .text {
-    position: absolute;
+header .logo{
+    display: flex;
+    align-items: flex-end;
+}
+header .text{
     text-transform: uppercase;
-    width: 135px;
-    height: 45px;
-    left: 193px;
-    top: 0px;
-
     font-family: 'Anton';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
-
+    padding-left: 5px;
     color: rgba(255, 255, 255, 0.5);
-
-
 }
-nav ul {
-    position: absolute;
-    width: 506.47px;
-    height: 24px;
-    left: 969px;
-    top: 0px;
+header nav{
+    display: flex;
+    align-items: center;
 }
-nav ul li {
-    display: inline;
-    margin: 15px;
+header ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.095em;
     text-transform: uppercase;
+}
+header li{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#part-1 .ellipse{
+    position: absolute;
+    top:0%;
+    z-index: -1;
+}
 
-    color: #FFFFFF;
+#part-1 .content{
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1345px;
+    padding-top: 95px;
 }
-/*MAIN*/
-.part-1 .beer{
-    position: absolute;
-    width: 745px;
-    height: 745px;
-    left: 214px;
-    top: 183px;
-}
-.part-1 h1 {
-    position: absolute;
+#part-1 .content .right{
     width: 477px;
-    height: 303px;
-    left: 1054px;
-    top: 260px;
-
+    padding-top: 172px;
+    padding-right: 73px;
+}
+#part-1 .content h1{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
@@ -83,8 +96,9 @@ nav ul li {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-bottom: 23px;
 }
-.part-1 h1 span {
+#part-1 .content span{
     font-family: 'Underdog';
     font-style: normal;
     font-weight: 400;
@@ -93,65 +107,56 @@ nav ul li {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-.part-1 .text {
-    position: absolute;
-    width: 461.58px;
-    height: 94px;
-    left: 1054px;
-    top: 648px;
+#part-1 .content p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 73px;
+    color: #FFFFFF;
+    opacity: 0.5;
 }
-.part-1 .ellipse {
-    width: 600px;
-}
-.part-1 .more {
-    position: absolute;
-    width: 218.44px;
-    height: 66px;
-    left: 1051.04px;
-    top: 775px;
+
+#part-1 .content a{
     background: #B9A1A1;
     border-radius: 35px;
-}
-.part-1 .more .text2 {
-    position: relative;
-    top: 34%;
-    left: 20%;
+    padding: 27px 32px 13px 32px;
+    margin-top: 76px;
 }
 
-
-
-.part-2 .text{
+#part-2 .ellipse{
     position: absolute;
+    right: 0%;
+    top: 978px;
+    z-index: -1;
+}
+#part-2 .content{
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1345px;
+    padding-top: 243px;
+} 
+
+#part-2 .content .left{
     width: 549px;
-    height: 501px;
-    left: 214px;
-    top: 1151px;
+    padding-right: 73px;
+    padding-left: 116px;
 }
-.part-2 .text h1{
-    position: absolute;
-    width: 500px;
-    height: 84px;
-    left: 43px;
-    top: 2px;
-
+#part-2 .content .left h1{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 84px;
-    text-align: center;
+    padding-bottom: 53px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
     color: #FFFFFF;
-}
-.part-2 .text p{
-    position: absolute;
-    width: 549px;
-    height: 364px;
-    left: 130px;
-    top: 120px;
 
+}
+#part-2 .content .left p{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
@@ -162,47 +167,49 @@ nav ul li {
 
     color: #FFFFFF;
 }
-.part-2 .team{
-    position: absolute;
-    width: 494px;
-    height: 602px;
-    left: 1105px;
-    top: 1144px;
+
+/* #part-2 .content .right .hide{
+    cursor: pointer;
+    position: absolute; 
+    background: black;
+    width: 100%;
+    top: 30%;
+    width: 43px;
+    height: 34px;
+} */
+
+#part-3{
+    display:flex;
+    margin: auto;
+    width: 1345px;
+    padding-top: 243px;
+    flex-direction: column;
 }
-.part-2 .ellipse2{
+#part-3 .ellipse{
     position: absolute;
-    width: 233px;
-    left: 1673px;
-    top: 1009px;
+    left: 0%;
+    top:2400px;
+    z-index: -1;
 }
-
-
-
-.part-3 h1{
-    position: absolute;
-    width: 680px;
-    height: 84px;
-    left: 346px;
-    top: 1900px;
-
+#part-3 .title{
+    margin: auto;
+    width: 1345px;
+    padding-left: 116px;
+    line-height: 20px;
+}
+#part-3 .title h1{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 84px;
-    text-align: center;
+    padding-bottom: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
     color: #FFFFFF;
 }
-.part-3 h2{
-    position: absolute;
-    width: 564px;
-    height: 64px;
-    left: 346px;
-    top: 2024px;
-
+#part-3 .title h2{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
@@ -210,53 +217,48 @@ nav ul li {
     line-height: 32px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    padding-bottom: 74px;
+    color: #FFFFFF;
+
+}
+#part-3 .content{
+    display:flex;
+    margin: auto;
+    width: 1345px;
+    
+} 
+#part-3 .content .left{
+    margin: auto;
+}
+#part-3 .content .right{
+    padding-top: 53px;
+    width: 537px;
+}
+#part-3 .content .right li{
+    padding-bottom: 71px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
 
     color: #FFFFFF;
 }
-.part-3 .beer-up{
-    position: absolute;
-    width: 439px;
-    height: 435px;
-    left: 456px;
-    top: 2142px;
-}
-.part-3 .text{
-    position: absolute;
-    width: 537px;
-    height: 310px;
-    left: 1023px;
-    top: 2165px;
-}
-.part-3 .ellipse3{
-    position: absolute;
-    width: 719px;
-    height: 521px;
-    left: -369.63px;
-    top: 2358px;
-}
+
+
 footer{
-    position: absolute;
-    width: 100%;
-    height: 179px;
-    left: 0px;
-    top: 2712px;
-
     background: #27242A;
+    margin-top: 102px;
 }
-footer .youtube{
-    position: absolute;
-    width: 154px;
-    height: 41px;
-    left: 125px;
-    top: 69px;
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 79px;
+    padding-bottom: 79px;
+    width: 1350px;
 }
-footer p{
-    position: absolute;
-    width: 417px;
-    height: 21px;
-    left: 1259px;
-    top: 71px;
-
+footer .content p{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
