@@ -76,10 +76,13 @@ main .text{
     justify-content: center;
     position: absolute;
     padding-top: 50px;
-    margin: auto;
-    width: 100%;
+    width: 740px;
     height: 100%;
     z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0
 }
 main .text .text1{
     margin-right: 158px;
