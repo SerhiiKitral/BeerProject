@@ -3,28 +3,122 @@
 <head>
     <link rel="stylesheet" href="../css/choose beer.css" />
     <title>Page Title</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script>
+      const csvFilePath = '../database/beermeal.csv';
+      // Define the column to extract
+      const beerPageContents = `
+        <h1>{{beertype}}</h1>
+        <img src="{{photourl}}" alt="{{beertype}}">
+        <p>{{beer_description}}</p>
+        <h2>Meals</h2>
+        <ul>
+          {{mealList}}
+        </ul>
+      `;
+
+      Papa.parse(csvFilePath, {
+        download: true,
+        header: true,
+        complete: function(results) {
+        	const container = document.getElementById('container');
+        	const groups = new Map();
+	
+			// const groups2 = new Map();
+			
+        	results.data.forEach(function(row) {
+			//taking rows
+				const beerType = row['beertype'];
+				
+				
+				
+				if (!groups.has(beerType)) {
+					groups.set(beerType, []);
+				}
+				
+				groups.get(beerType).push(row);
+				
+				
+			});
+		
+			
+			// results.data.forEach(function(row) {
+			// //taking rows
+			
+			// 	if (!groups2.has(beerPhoto)) {
+			//  		groups2.set(beerPhoto, []);
+			//  	}
+			//  	groups2.get(beerPhoto).push(row);
+			//  });
+
+
+
+			//for meals
+        	groups.forEach(function(rows, beerType) {
+            	const mealList = rows.map(function(row) {  
+              		return `<li>${row['meal']}</li>`;
+            	}).join('');
+				const beerPhoto = rows[0]['photourl'];
+				const beerPage = `
+				<!DOCTYPE html>
+				<html>
+					<head>
+					<meta charset="utf-8">
+					<title>${beerType}</title>
+					</head>
+					<body>
+					${beerPageContents.replace(/{{(\w+)}}/g, function(match, p1) {
+						return p1 === 'mealList' ? mealList : rows[0][p1];
+					})}
+					</body>
+				</html>
+				`;
+				const blob = new Blob([beerPage], {type: 'text/html'});
+				const url = URL.createObjectURL(blob);
+				const beerDiv = document.createElement('div');
+				beerDiv.id = 'card';
+				const beerIMG = document.createElement('img');
+				beerIMG.id = 'photo';
+				beerIMG.src = beerPhoto;
+
+
+
+				const beerName = document.createElement('p');
+				beerName.id = 'beerName';
+				beerName.innerHTML = beerType;
+				const link = document.createElement('a');
+				link.href = url;
+				link.innerHTML = "ПЕРЕЙТИ";
+				beerDiv.appendChild(beerIMG);
+				beerDiv.appendChild(beerName);
+				beerDiv.appendChild(link);
+				container.appendChild(beerDiv);
+          	});
+        }
+      });
+    </script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img class="beer" src="../src/logo_beer.svg">
-                <span class="text">shavky.org</span>
-            </div>
-			<ul>
-				<li><a href="index.html"><img src="../src/головна.svg"></a></li>
-				<li><a href="choose.html"><img src="../src/пиво і страви.svg" ></a></li>
-				<li><a href="#"><img src="../src/де купити.svg" style="height:13.5px"></a></li>
-                <li><a href="#"><img src="../src/акції.svg" style="height:16px"></a></li>
-			</ul>
+		<div class="logo">
+			<img class="beer" src="../src/logo_beer.svg">
+			<span class="text">shavky.org</span>
+		</div>
+		<nav>
+		<ul>
+			<li><a href="index.html">головна</a></li>
+			<li><a href="" style="background: rgba(217, 217, 217, 0.47);
+				border-radius: 40px;padding: 10px 26px 10px 26px;">пиво і страви</a></li>
+			<li><a href="#">де купити</a></li>
+		</ul>
 		</nav>
 	</header>
-
 	<main>
 		<div class="choose_beer">
-			<p> Виберіть пиво </p>
-			<div class="sort beers">
-				<div class="amber_ale">
+			<h1> Виберіть сорт </h1>
+			<div id="container">
+				<!-- <div class="amber_ale">
 					<img src="../src/amber ale.png">
 					<p>Amber ale</p>
 					<div class="amber_ale_button">
@@ -79,15 +173,15 @@
 					<div class="wheat_beer_button">
 						<a href="index.html"> перейти </a>
 					</div>
-				</div>
+				</div> -->
 			</div>
-
 		</div>
-       
 	</main>
 	<footer>
-		<img class="youtube" src="../src/youtube.svg" alt="">
-        <p>© 2023 shavky.org - Усі права захищено</p>
+        <div class="content">
+		    <img src="../src/youtube.svg" alt="">
+            <p>© 2023 shavky.org - Усі права захищено</p>
+        </div>
 	</footer>
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script>
+      const csvFilePath = 'beermeal.csv';
+      // Define the column to extract
+      const beerPageContents = `
+        <h1>{{beertype}}</h1>
+        <img src="{{photourl}}" alt="{{beertype}}">
+        <p>{{beer_description}}</p>
+        <h2>Meals</h2>
+        <ul>
+          {{mealList}}
+        </ul>
+      `;
+
+      Papa.parse(csvFilePath, {
+        download: true,
+        header: true,
+        complete: function(results) {
+          const container = document.getElementById('container');
+          //for meals
+          const groups = new Map();
+          results.data.forEach(function(row) {
+            const beerType = row['beertype'];
+            if (!groups.has(beerType)) {
+              groups.set(beerType, []);
+            }
+            groups.get(beerType).push(row);
+          });
+          groups.forEach(function(rows, beerType) {
+            const mealList = rows.map(function(row) {  
+              return `<li>${row['meal']}</li>`;
+            }).join('');
+            const beerPage = `
+              <!DOCTYPE html>
+              <html>
+                <head>
+                  <meta charset="utf-8">
+                  <title>${beerType}</title>
+                </head>
+                <body>
+                  ${beerPageContents.replace(/{{(\w+)}}/g, function(match, p1) {
+                    return p1 === 'mealList' ? mealList : rows[0][p1];
+                  })}
+                </body>
+              </html>
+            `;
+            const blob = new Blob([beerPage], {type: 'text/html'});
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.innerHTML = beerType;
+            container.appendChild(link);
+          });
+        }
+      });
+    </script>
+    <style>
+      #aboba{
+        width:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>

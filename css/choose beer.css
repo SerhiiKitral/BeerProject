@@ -11,63 +11,115 @@ body {
     background-color: #3A353D;
     margin: 0;
 }
-
 /*HEADER*/
-nav {
-    color:white;
-    position: absolute;
-    width: 1345.47px;
-    height: 53px;
-    left: 130px;
-    top: 45px;
+a{
+    text-decoration:none;
+    color: #FFFFFF;
 }
-nav .logo .beer {
-    position: absolute;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    width:1345px;
+    margin: auto;
+}
+header .beer{
     width: 53px;
     height: 53px;
-    left: 130px;
-    top: 0px;
 }
-nav .logo .text {
-    position: absolute;
+header .logo{
+    display: flex;
+    align-items: flex-end;
+}
+header .text{
     text-transform: uppercase;
-    width: 135px;
-    height: 45px;
-    left: 193px;
-    top: 0px;
-
     font-family: 'Anton';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
-
+    padding-left: 5px;
     color: rgba(255, 255, 255, 0.5);
-
-
 }
-nav ul {
-    position: absolute;
-    width: 506.47px;
-    height: 24px;
-    left: 969px;
-    top: 0px;
+header nav{
+    display: flex;
+    align-items: center;
 }
-nav ul li {
-    display: inline;
-    margin: 15px;
+header ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.095em;
     text-transform: uppercase;
-
-    color: #FFFFFF;
+}
+header li{
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
-.choose_beer p{
-    position: absolute;
-    width: 700px;
-    height: 84px;
-    left: 630px;
-    top: 120px;
+#container {
+    display: flex;
+    margin: auto;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 1350px;
+    gap: 94px 73px;
+}
+#container #card{
+    background: #B9A1A1;
+    border-radius: 50px;
+    width: 401px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 52px;
+}
+#container #card a{
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    padding: 13px 47px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+#container #card p{
+    margin: auto;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 18px;
+}
 
+#container #card #photo{
+    height:283px;
+    margin: auto;
+    padding-top:43px;
+    padding-bottom: 28px;
+}
+
+
+
+
+
+.choose_beer h1{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
@@ -76,7 +128,7 @@ nav ul li {
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
+    padding-top: 43px;
     color: #FFFFFF;
 }
 .amber_ale{
@@ -717,30 +769,18 @@ nav ul li {
 
 
 footer{
-    position: absolute;
-    width: 100%;
-    height: 179px;
-    left: 0px;
-    top: 2712px;
-    margin-top: -100px;
-
     background: #27242A;
+    margin-top: 82px;
 }
-footer .youtube{
-    position: absolute;
-    width: 154px;
-    height: 41px;
-    left: 125px;
-    top: 69px;
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 59px;
+    padding-bottom: 59px;
+    width: 1350px;
 }
-
-footer p{
-    position: absolute;
-    width: 417px;
-    height: 21px;
-    left: 1259px;
-    top: 71px;
-
+footer .content p{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
