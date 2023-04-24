@@ -74,7 +74,6 @@ header li{
     top:0%;
     z-index: -1;
 }
-
 #part-1 .content{
     display:flex;
     justify-content: space-between;
@@ -120,8 +119,15 @@ header li{
 #part-1 .content a{
     background: #B9A1A1;
     border-radius: 35px;
-    padding: 27px 32px 13px 32px;
-    margin-top: 76px;
+    padding: 11px 32px 13px 32px;
+    margin-top: 71px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 #part-2 .ellipse{
