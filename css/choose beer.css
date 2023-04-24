@@ -73,6 +73,7 @@ header li{
     flex-wrap: wrap;
     width: 1350px;
     gap: 94px 73px;
+    min-height: 1400px;
 }
 #container #card{
     background: #B9A1A1;
@@ -174,7 +175,7 @@ header li{
     line-height: 29px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
+    width: 743px;
     color: #FFFFFF;
 }
 #bottom{
@@ -191,7 +192,32 @@ header li{
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+#bottom ul{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1350px;
+    gap: 94px 73px;
+}
+#bottom li{
+    background: #B9A1A1;
+    border-radius: 50px;
+    width: 401px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 52px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 18px;
+}
 
 
 
