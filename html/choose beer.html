@@ -8,15 +8,7 @@
     <script>
       const csvFilePath = '../database/beermeal.csv';
       // Define the column to extract
-      const beerPageContents = `
-        <h1>{{beertype}}</h1>
-        <img src="{{photourl}}" alt="{{beertype}}">
-        <p>{{beer_description}}</p>
-        <h2>Meals</h2>
-        <ul>
-          {{mealList}}
-        </ul>
-      `;
+      
 
       Papa.parse(csvFilePath, {
         download: true,
@@ -41,17 +33,6 @@
 				
 				
 			});
-		
-			
-			// results.data.forEach(function(row) {
-			// //taking rows
-			
-			// 	if (!groups2.has(beerPhoto)) {
-			//  		groups2.set(beerPhoto, []);
-			//  	}
-			//  	groups2.get(beerPhoto).push(row);
-			//  });
-
 
 
 			//for meals
@@ -60,40 +41,46 @@
               		return `<li>${row['meal']}</li>`;
             	}).join('');
 				const beerPhoto = rows[0]['photourl'];
-				const beerPage = `
-				<!DOCTYPE html>
-				<html>
-					<head>
-					<meta charset="utf-8">
-					<title>${beerType}</title>
-					</head>
-					<body>
-					${beerPageContents.replace(/{{(\w+)}}/g, function(match, p1) {
-						return p1 === 'mealList' ? mealList : rows[0][p1];
-					})}
-					</body>
-				</html>
+				const beerPageContents = `
+				<div id="content">
+					<img id="ellipse" src="../src/Ellipse 6.png">
+					<div id="left">
+						<img src="${beerPhoto}" alt="${beerType}">
+					</div>
+					<div id="right">
+						<h1 id="beerType">${beerType}</h1>
+						<p>${rows[0]['beer_description']}</p>
+						<button id="backBtn" onclick="window.location.reload()">назад до сортів</button>
+					</div>
+				</div>
+				<div id ="bottom">
+						<h1 id="beerType">з чим поєднюється</h1>
+						
+						<ul>
+						${mealList}
+						</ul>
+					</div>
 				`;
-				const blob = new Blob([beerPage], {type: 'text/html'});
-				const url = URL.createObjectURL(blob);
-				const beerDiv = document.createElement('div');
-				beerDiv.id = 'card';
-				const beerIMG = document.createElement('img');
-				beerIMG.id = 'photo';
-				beerIMG.src = beerPhoto;
+      const link = document.createElement('a');
+      link.href = '#';
+      link.innerHTML = 'ПЕРЕЙТИ';
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        container.innerHTML = beerPageContents;
+      });
+      const beerDiv = document.createElement('div');
+      beerDiv.id = 'card';
+      const beerIMG = document.createElement('img');
+      beerIMG.id = 'photo';
+      beerIMG.src = beerPhoto;
 
-
-
-				const beerName = document.createElement('p');
-				beerName.id = 'beerName';
-				beerName.innerHTML = beerType;
-				const link = document.createElement('a');
-				link.href = url;
-				link.innerHTML = "ПЕРЕЙТИ";
-				beerDiv.appendChild(beerIMG);
-				beerDiv.appendChild(beerName);
-				beerDiv.appendChild(link);
-				container.appendChild(beerDiv);
+      const beerName = document.createElement('p');
+      beerName.id = 'beerName';
+      beerName.innerHTML = beerType;
+      beerDiv.appendChild(beerIMG);
+      beerDiv.appendChild(beerName);
+      beerDiv.appendChild(link);
+      container.appendChild(beerDiv);
           	});
         }
       });
@@ -116,64 +103,9 @@
 	</header>
 	<main>
 		<div class="choose_beer">
-			<h1> Виберіть сорт </h1>
 			<div id="container">
-				<!-- <div class="amber_ale">
-					<img src="../src/amber ale.png">
-					<p>Amber ale</p>
-					<div class="amber_ale_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="brown_ale">
-					<img src="../src/brown_ale.png">
-					<p>Brown ale</p>
-					<div class = "button_brown_ale">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="dark_lager">
-					<img src="../src/dark_lager.png">
-					<p>Dark lager</p>
-					<div class="dark_lager_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="ipa">
-					<img src="../src/ipa1.png">
-					<p>IPA</p>
-					<div class="ipa_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="light_lager">
-					<img src="../src/ligth lager.png">
-					<p>Light lager</p>
-					<div class="light_lager_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="porter">
-					<img src="../src/porter.png">
-					<p>Porter</p>
-					<div class="porter_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="stout">
-					<img src="..//src/stout.png" alt="">
-					<p>Stoud</p>
-					<div class="stout_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div>
-				<div class="wheat_beer">
-					<img src="..//src/wheatbeer.png" alt="">
-					<p>Wheat beer</p>
-					<div class="wheat_beer_button">
-						<a href="index.html"> перейти </a>
-					</div>
-				</div> -->
+				<h1 id="choose_sort"> Виберіть сорт </h1>
+				
 			</div>
 		</div>
 	</main>
