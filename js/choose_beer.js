@@ -1,3 +1,5 @@
+
+
 const csvFilePath = '../database/beermeal.csv';
 // Define the column to extract
 Papa.parse(csvFilePath, {
@@ -47,12 +49,13 @@ Papa.parse(csvFilePath, {
                 </div>
             `;
             const link = document.createElement('a');
-            link.href = '#';
+            link.href = '#link-to';
             link.innerHTML = 'ПЕРЕЙТИ';
             link.addEventListener('click', function (event) {
                 event.preventDefault();
                 container.innerHTML = beerPageContents;
-                container.scrollTop = 0;
+                document.getElementById('link-to').scrollIntoView();
+                    
             });
             const beerDiv = document.createElement('div');
             beerDiv.id = 'card';

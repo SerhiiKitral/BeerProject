@@ -215,16 +215,6 @@ header li{
     color: #FFFFFF;
 }
 
-/* #part-2 .content .right .hide{
-    cursor: pointer;
-    position: absolute; 
-    background: black;
-    width: 100%;
-    top: 30%;
-    width: 43px;
-    height: 34px;
-} */
-
 #part-3{
     display:flex;
     margin: auto;
