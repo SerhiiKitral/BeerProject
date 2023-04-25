@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+
+
 html{
     user-select: none;    
 }
@@ -67,6 +79,7 @@ header li{
 
 
 #container {
+    
     display: flex;
     margin: auto;
     justify-content:center;
@@ -76,6 +89,7 @@ header li{
     min-height: 1400px;
 }
 #container #card{
+    animation: 1s ease 0s 1 slideInFromLeft;
     background: #B9A1A1;
     border-radius: 50px;
     width: 401px;
@@ -96,7 +110,6 @@ header li{
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    
     color: #000000;
 }
 #container #card p{

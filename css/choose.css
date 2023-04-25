@@ -1,16 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+
 html{
-    user-select: none;   
+    user-select: none;
+    overflow-x: hidden;   
 }
 header img{
     pointer-events: none;
 }
 
 body {
-    background: url("../src/Splash.png") no-repeat scroll;
-    background-size: cover;
+    /* background: url("../src/Splash.png") no-repeat scroll;
+    background-size: cover; */
     background-color: #3A353D;
     margin: 0;
 }
@@ -21,6 +44,7 @@ a{
 }
 
 header{
+    
     display: flex;
     justify-content: space-between;
     padding-top: 35px;
@@ -70,6 +94,13 @@ main{
     justify-content: space-between;
     padding-top: 40px;
     position: relative;
+    min-height: 1000px;
+}
+main .beer{
+    animation: 1s ease 0s 1 slideInFromLeft;
+}
+main .steak-up{
+    animation: 1s ease 0s 1 slideInFromRight;
 }
 main .text{
     display: flex;
@@ -115,11 +146,19 @@ main .line{
     padding-top: 93px;
 }
 
-main .splash{
+main .splash1{
     position: absolute;
-    left: 0%;
-    top: 75px;
+    
+    top: -67px;
     z-index: -1;
+    animation: 1s ease 0s 1 slideInFromLeft;
+}
+main .splash2{
+    position: absolute;
+    right:0;
+    z-index: -1;
+    top: 110px;
+    animation: 1s ease 0s 1 slideInFromRight;
 }
 
 

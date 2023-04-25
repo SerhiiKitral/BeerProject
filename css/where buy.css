@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+html{
+    user-select: none;    
+}
+* {
+    transition: 0.2s;
+}
+img {
+    pointer-events: none
+}
+body {
+    background-color: #3A353D;
+    margin: 0;
+}
+/*HEADER*/
+a{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    width:1345px;
+    margin: auto;
+}
+header .beer{
+    width: 53px;
+    height: 53px;
+}
+header .logo{
+    display: flex;
+    align-items: flex-end;
+}
+header .text{
+    text-transform: uppercase;
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    padding-left: 5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+}
+header li{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+footer{
+    background: #27242A;
+    margin-top: 82px;
+}
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 59px;
+    padding-bottom: 59px;
+    width: 1350px;
+}
+footer .content p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}

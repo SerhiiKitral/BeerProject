@@ -1,8 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+@keyframes slideInFromBottom{
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 100%;
+      }
+}
+
+
 html{
     user-select: none;    
+    overflow-x: hidden;   
+
 }
 img {
     pointer-events: none
@@ -39,6 +73,7 @@ header .beer{
 header .logo{
     display: flex;
     align-items: flex-end;
+    margin-top: 5px;
 }
 header .text{
     text-transform: uppercase;
@@ -73,6 +108,8 @@ header li{
     position: absolute;
     top:0%;
     z-index: -1;
+    animation: 1s ease 0s 1 slideInFromLeft;
+
 }
 #part-1 .content{
     display:flex;
@@ -80,6 +117,9 @@ header li{
     margin: auto;
     width: 1345px;
     padding-top: 95px;
+}
+#part-1 .content .left{
+    animation: 0.7s ease 0s 1 slideInFromBottom;
 }
 #part-1 .content .right{
     width: 477px;
@@ -135,6 +175,7 @@ header li{
     right: 0%;
     top: 978px;
     z-index: -1;
+    animation: 1s ease 0s 1 slideInFromRight;
 }
 #part-2 .content{
     display:flex;
