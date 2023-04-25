@@ -190,7 +190,7 @@ button {
     line-height: 29px;
     text-align: center;
     color: #FFFFFF;
-    padding: 23px 13px;
+    padding: 20px 33px;
     background: #B9A1A1;
     border-radius: 35px;
     margin-top: 62px;
@@ -219,6 +219,10 @@ button {
     width: 1350px;
     gap: 94px 73px;
 }
+#bottom #photo{
+    width: 300px;
+    margin: auto;
+}
 #bottom li{
     background: #B9A1A1;
     border-radius: 50px;
@@ -237,8 +241,10 @@ button {
     color: #000000;
 }
 #bottom img{
-    padding-top: 22px;
-    height: 371px;
+    padding-top: 43px;
+    padding-bottom: 28px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 
