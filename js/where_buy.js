@@ -29,24 +29,40 @@ function autocompleteMatch(input) {
     return { beername: row[beernameColumn], volume: row[volumeColumn], url: row[urlColumn], price: row[priceColumn], shop:row[shopColumn], beertype: row[beertypeColumn]  };
     });
 }
+function addCurrency(str) {
+    if (str && str.endsWith('грн.')) {
+        str = str.replace(' грн.', '₴');
+    } else if (str) {
+        str += '₴';
+    }
+    return str;
+}
+function addVolume(str) {
+    if (str && !str.endsWith('Л')) {
+        str += 'Л';
+    }
+    return str;
+}
 function showResults(val) {
     const name = document.getElementById("result");
     name.innerHTML = '';
     let list = '';
     const terms = autocompleteMatch(val);
     for (let i = 0; i < terms.length; i++) {
-    list +=
-    '<a href="' + terms[i].url + '">' + 
-        '<div id="left">' +
-            '<div id="name">' + terms[i].beername + '</div>' + 
-            '<div id="beertype">' + terms[i].beertype + '</div>' + 
-            '<div id="shop">' + terms[i].shop + '</div>' + 
-        '</div>' +
-        '<div id="right">' +
-            '<div id="volume">' + terms[i].volume + '</div>' + 
-            '<div id="price">' + terms[i].price + '</div>' + 
-        '</div>' +
-    '</a>';
-    }
+        let price = addCurrency(terms[i].price);
+        let volume = addVolume(terms[i].volume);
+        list +=
+        '<a href="' + terms[i].url + '">' + 
+            '<div id="left">' +
+                '<div id="name">' + terms[i].beername + '</div>' + 
+                '<div id="beertype">' + terms[i].beertype + '</div>' + 
+                '<div id="shop">' + terms[i].shop + '</div>' + 
+            '</div>' +
+            '<div id="right">' +
+                '<div id="volume">' + volume + '</div>' + 
+                '<div id="price">' + price + '</div>' + 
+            '</div>' +
+        '</a>';
+        }
     name.innerHTML = list;
 }

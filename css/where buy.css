@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(10%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+
 html{
     user-select: none;    
 }
@@ -64,11 +75,102 @@ header li{
     margin-left: 20px;
     margin-top: 5px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
+#input {
+    letter-spacing: 0.1em;
+    background-position: 30px 22px;
+    background-image: url(../src/пошук.svg);
+    background-repeat: no-repeat;
+    text-indent: 78px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 80px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 941px;
+    font-family: 'Roboto Slab';
+    margin: auto;
+    margin-top: 138px;
+    }
+#result{
+    animation: 1s cubic-bezier(0, 0, 0, 0.95) 0s 1 slideInFromBottom;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1350px;
+    padding-top: 157px;
+    gap: 24px;
+    min-height: 800px;
+}
+#result a{
+    padding: 24px 34px 18px 57px;
+    border-radius: 50px;
+    background: rgba(185, 161, 161, 0.7);
+    display: flex;
+    justify-content: space-between;
+}
+#result #left #name{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 
+    color: #FFFFFF;
+}
+#result #left #beertype{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
 
+    color: rgba(255, 255, 255, 0.76);
+}
+#result #left #shop{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+    padding-top: 15px;
 
+    color: #FFFFFF;
+}
+#result #right{
+    text-align: right;
+}
+#result #right #volume{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    padding-top: 30px;
 
+    color: rgba(255, 255, 255, 0.7);
+}
+#result #right #price{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
 
+    color: #FFFFFF;
+}
 
 footer{
     background: #27242A;
