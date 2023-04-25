@@ -14,64 +14,67 @@ img {
 }
 
 /*HEADER*/
-nav {
-    color:white;
-    position: absolute;
-    width: 1345.47px;
-    height: 53px;
-    left: 130px;
-    top: 45px;
+a{
+    text-decoration:none;
+    color: #FFFFFF;
 }
-nav .logo .beer {
-    position: absolute;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    width:1345px;
+    margin: auto;
+}
+header .beer{
     width: 53px;
     height: 53px;
-    left: 130px;
-    top: 0px;
 }
-nav .logo .text {
-    position: absolute;
+header .logo{
+    display: flex;
+    align-items: flex-end;
+}
+header .text{
     text-transform: uppercase;
-    width: 135px;
-    height: 45px;
-    left: 193px;
-    top: 0px;
-
     font-family: 'Anton';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
-
+    padding-left: 5px;
     color: rgba(255, 255, 255, 0.5);
-
-
 }
-nav ul {
-    position: absolute;
-    width: 506.47px;
-    height: 24px;
-    left: 969px;
-    top: 0px;
+header nav{
+    display: flex;
+    align-items: center;
 }
-nav ul li {
-    display: inline;
-    margin: 15px;
+header ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.095em;
     text-transform: uppercase;
-
-    color: #FFFFFF;
+}
+header li{
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 /*MAIN*/
-.topnav {
+.part-1 .ellipse{
     position: absolute;
-    overflow: hidden;
-    width: 1000px;
-    top: 300px;
-    right: 50%;
-    left: 22.5%;
-    border: none;
-  }
+    top:0%;
+    z-index: -1;
+}
+.part-1 .topnav{
+    margin: auto;
+    width: 1345px;
+    padding-top: 243px;
+} 
   
   .topnav a {
     float: left;
@@ -96,9 +99,6 @@ nav ul li {
     
   }
   
-  .topnav .search-container {
-    float: right;
-  }
   .topnav input[type=text] {
     letter-spacing: 0.1em;
     background-position: 30px 22px;
@@ -167,46 +167,53 @@ nav ul li {
     }
   }
 
-
+.part-2 .ellipse{
+    position: absolute;
+    right: 0%;
+    top: 978px;
+    z-index: -1;
+}
 .part-2 h1{
     position: absolute;
-width: 782px;
-height: 84px;
-left: 562px;
-top: 826px;
+    width: 782px;
+    height: 84px;
+    left: 562px;
+    top: 826px;
 
-font-family: 'Roboto Slab';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 84px;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 
 .риба{
-    position: absolute;
-    width: 401.19px;
-    height: 500px;
-    left: 256px;
-    top: 1090px;
-
     background: #B9A1A1;
     border-radius: 50px;
+    width: 401px;
+    display: flex;
+    padding-bottom: 52px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
 }
 .риба img{
-    position: absolute;
-    width: 283px;
-    height: 283px;
-    left: 56px;
-    top: 45px;
-
-    background: url(image.png);
-    border-radius: 40px;
+    padding-top: 43px;
+    padding-bottom: 28px;
+    max-height: 100%;
+    max-width: 100%;
 }
 .риба p{
     position: absolute;
@@ -267,27 +274,29 @@ color: #FFFFFF;
     color: #000000;
 }
 
-.мясо{
-    position: absolute;
-    width: 401.19px;
-    height: 500px;
-    left: 1228px;
-    top: 1090px;
-
+.картопля_фрі{
     background: #B9A1A1;
     border-radius: 50px;
+    width: 401px;
+    display: flex;
+    padding-bottom: 52px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
 }
-.мясо img{
-    position: absolute;
-    width: 283px;
-    height: 283px;
-    left: 58.59px;
-    top: 45px;
-
-    background: url(image.png);
-    border-radius: 40px;
+.картопля_фрі img{
+    padding-top: 43px;
+    padding-bottom: 28px;
+    max-height: 100%;
+    max-width: 100%;
 }
-.мясо p{
+.картопля_фрі p{
     position: absolute;
     width: 129px;
     height: 21px;
@@ -305,7 +314,7 @@ color: #FFFFFF;
 
     color: #000000;
 }
-.мясо_button{
+.картопля_фрі_button{
     position: absolute;
     width: 231px;
     height: 52px;
@@ -326,7 +335,7 @@ color: #FFFFFF;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 35px;
 }
-.мясо_button a{
+.картопля_фрі_button a{
     position: absolute;
     width: 137px;
     height: 26px;
@@ -347,24 +356,26 @@ color: #FFFFFF;
 }
 
 .піца{
-    position: absolute;
-    width: 401.19px;
-    height: 500px;
-    left: 741.41px;
-    top: 1090px;
-
     background: #B9A1A1;
     border-radius: 50px;
+    width: 401px;
+    display: flex;
+    padding-bottom: 52px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
 }
 .піца img{
-    position: absolute;
-    width: 283px;
-    height: 283px;
-    left: 58.59px;
-    top: 45px;
-
-    background: url(image.png);
-    border-radius: 40px;
+    padding-top: 43px;
+    padding-bottom: 28px;
+    max-height: 100%;
+    max-width: 100%;
 }
 .піца p{
     position: absolute;
@@ -425,45 +436,19 @@ color: #FFFFFF;
     color: #000000;
 }
 
-.part-1 .ellipse4 {
-    position: absolute;
-    width: 584px;
-    left: -399px;
-    top: -136px;
-    height: 1125px;
-}
-
-.part-2 .ellipse5 {
-    position: absolute;
-    width: 360px;
-    height: 920px;
-    left: 1546px;
-    top: 511px;
-}
-
 footer{
-    position: absolute;
-    width: 100%;
-    height: 179px;
-    left: 0px;
-    top: 1769px;
-
     background: #27242A;
+    margin-top: 102px;
 }
-footer .youtube{
-    position: absolute;
-    width: 154px;
-    height: 41px;
-    left: 125px;
-    top: 69px;
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 59px;
+    padding-bottom: 59px;
+    width: 1350px;
 }
-footer p{
-    position: absolute;
-    width: 417px;
-    height: 21px;
-    left: 1259px;
-    top: 71px;
-
+footer .content p{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
