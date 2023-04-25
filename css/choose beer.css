@@ -178,6 +178,25 @@ header li{
     width: 743px;
     color: #FFFFFF;
 }
+button {
+    all: unset;
+    cursor: pointer;
+}
+#content #right button{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 23px 13px;
+    background: #B9A1A1;
+    border-radius: 35px;
+    margin-top: 62px;
+}
+
+
 #bottom{
     padding-top:115px;
 }
@@ -218,7 +237,10 @@ header li{
     color: #000000;
     padding-bottom: 18px;
 }
-
+#bottom img{
+    padding-top: 22px;
+    height: 371px;
+}
 
 
 

@@ -22,8 +22,10 @@ Papa.parse(csvFilePath, {
         //for meals
         groups.forEach(function (rows, beerType) {
             const mealList = rows.map(function (row) {
-                return `<li>${row['meal']}</li>`;
+                const mealPhoto = row['meal_photourl'];
+                return `<li><img src="${mealPhoto}" alt="${row['meal']}"><span>${row['meal']}</span></li>`;
             }).join('');
+            
             const beerPhoto = rows[0]['photourl'];
             const beerPageContents = `
                 <div id="content">
@@ -34,7 +36,7 @@ Papa.parse(csvFilePath, {
                     <div id="right">
                         <h1 id="beerType">${beerType}</h1>
                         <p>${rows[0]['beer_description']}</p>
-                        <button id="backBtn" onclick="window.location.reload()">назад до сортів</button>
+                        <button onclick="window.location.reload()">повернутися до сортів</button>
                     </div>
                 </div>
                 <div id ="bottom">
