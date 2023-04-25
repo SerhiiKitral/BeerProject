@@ -3,18 +3,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 @keyframes slideInFromLeft {
     0% {
-      transform: translateY(100%);
+      transform: translateX(-100%);
       opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0%;
     }
     100% {
       transform: translateY(0);
       opacity: 100%;
     }
   }
-
+  @keyframes slideInFromBottom2 {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 html{
-    user-select: none;    
+    user-select: none;
+    overflow-x: hidden;  
 }
 * {
     transition: 0.2s;
@@ -89,7 +117,7 @@ header li{
     min-height: 1400px;
 }
 #container #card{
-    animation: 1s ease 0s 1 slideInFromLeft;
+    animation: 1s ease 0s 1 slideInFromBottom;
     background: #B9A1A1;
     border-radius: 50px;
     width: 401px;
@@ -155,15 +183,25 @@ header li{
     display: flex;
     padding-top: 93px;
 }
-#content #ellipse{
+#content #ellipse61{
+    animation: 1s ease 0s 1 slideInFromLeft;
     position: absolute;
     left: 0%;
-    width: 100%;
+    width: 50%;
     top: 0;
+    z-index: -1
+}
+#content #ellipse62{
+    animation: 1s ease 0s 1 slideInFromRight;
+    position: absolute;
+    right: 0%;
+    width: 30%;
+    top: 60%;
     z-index: -1
 }
 #content #left img{
     height:643px;
+    animation: 0.7s ease 0s 1 slideInFromBottom2;
 }
 #content #right {
     padding-left: 16px;

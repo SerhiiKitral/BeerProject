@@ -31,7 +31,6 @@ Papa.parse(csvFilePath, {
             const beerPhoto = rows[0]['photourl'];
             const beerPageContents = `
                 <div id="content">
-                    <img id="ellipse" src="../src/Ellipse 6.png">
                     <div id="left">
                         <img src="${beerPhoto}" alt="${beerType}">
                     </div>
@@ -40,6 +39,8 @@ Papa.parse(csvFilePath, {
                         <p>${rows[0]['beer_description']}</p>
                         <button onclick="window.location.reload()">повернутися до сортів</button>
                     </div>
+                    <img id="ellipse61" src="../src/Ellipse61.png">
+                    <img id="ellipse62" src="../src/Ellipse62.png">
                 </div>
                 <div id ="bottom">
                     <h1 id="beerType">з чим поєднюється</h1>

@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+
 body {
     background-color: #3A353D;
     margin: 0;
 }
 
 html{
-    user-select: none;    
+    user-select: none;
+    overflow-x: hidden;
 }
 img {
     pointer-events: none;
@@ -69,6 +91,7 @@ header li{
     width: 100%;
 }
 .part-1 .ellipse{
+    animation: 1s ease 0s 1 slideInFromLeft;
     position: absolute;
     top:0%;
     z-index: -1;
@@ -154,6 +177,7 @@ background: #ccc;
 }
 
 .part-2 .ellipse{
+    animation: 1s ease 0s 1 slideInFromRight;
     position: absolute;
     right: 0%;
     top: 978px;
