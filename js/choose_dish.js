@@ -64,7 +64,7 @@ function showMealPage(row) {
     
 
     const mealPageContents = '<div id="mealContent"><div id="left">' + '<h1>' + meal + '</h1><img src="' + row['meal_photourl'] + '" id="mealPhoto"></div>' + 
-                            '<div id="right"><ul>' + beerTypes + '</ul></div>' +
+                            '<div id="right"><ul><button onclick="window.location.reload();">повернутися до страв</button>' + beerTypes + '</ul></div>' +
                             '<img src="../src/Ellipse 71.png" id="ellipse2"></div>';
     mealdata.innerHTML = mealPageContents;
 }

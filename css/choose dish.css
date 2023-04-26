@@ -106,6 +106,13 @@ header li{
     left: 0;
     z-index: -1;
 }
+.part-1 .ellipse2{
+    animation: 1s ease 0s 1 slideInFromRight;
+    position: absolute;
+    top:50%;
+    right: 0;
+    z-index: -1;
+}
 .part-1 .topnav{
     margin: auto;
     width: 945px;
@@ -144,14 +151,16 @@ header li{
 }
 #mealContent #left img{
     animation: 1s ease 0s 1 slideInFromBottom;
-    padding-top: 141px;
+    padding-top: 40px;
 }
 #mealContent #right{
     display: flex;
     padding-left: 145px;
 }
 
-
+#mealContent #right ul{
+    margin: auto;
+}
 #mealContent #right li{
     animation: 1s ease 0s 1 slideInFromRight;
     display: flex;
@@ -212,6 +221,25 @@ header li{
     padding-bottom: 28px;
     max-height: 100%;
     max-width: 100%;
+}
+#mealContent #right button {
+    all: unset;
+    cursor: pointer;
+}
+#mealContent #right button{
+    animation: 1s ease 0s 1 slideInFromRight;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 33px;
+    background: rgba(185, 161, 161, 0.7);
+    border-radius: 35px;
+    margin-top: 62px;
+    margin-bottom: 30px;
 }
 
 
@@ -346,6 +374,7 @@ background: #ccc;
     width: 300px;
     margin: auto;
 }
+
 
 footer{
     background: #27242A;
