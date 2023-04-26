@@ -297,6 +297,22 @@ button {
     max-height: 100%;
     max-width: 100%;
 }
+#bottom li #choose_dish{
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    padding: 13px 47px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 10px;
+}
 
 
 

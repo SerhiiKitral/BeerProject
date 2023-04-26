@@ -4,35 +4,11 @@
     <link rel="stylesheet" href="../css/choose dish.css" />
     <title>ПИВО І СТРАВИ | shavky.org</title>
     <link rel = "icon" href = "../src/logos.ico" type = "image/x-icon">
-     <script>
-    var search_terms = ['запечена курка', 'запечена риба', 'запечена катя зі сметанкою', 'запечена юля з картоплею', 'запечений юра в соусі з юлі'];
-
-    function autocompleteMatch(input) {
-      if (input == '') {
-        return [];
-      }
-      var reg = new RegExp(input)
-      return search_terms.filter(function(term) {
-        if (term.match(reg)) {
-          return term;
-        }
-      });
-    }
-
-    function showResults(val) {
-      res = document.getElementById("result");
-      res.innerHTML = '';
-      let list = '';
-      let terms = autocompleteMatch(val);
-      for (i=0; i<terms.length; i++) {
-        list += '<li>' + terms[i] + '</li>';
-      }
-      res.innerHTML = list;
-    }
-</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
 </head>
 <body>
-  <header>
+  <header id="link-to">
 		<div class="logo">
 			<img class="beer" src="../src/logo_beer.svg">
 			<span class="text">shavky.org</span>
@@ -50,13 +26,18 @@
 	<main>
     <body>
       <div class="part-1">
+        <div id="mealdata">
+
+        
         <div class="topnav">
           <div class="search-container">
             <form autocomplete="off"><input type="text" name="q" id="q" onKeyUp="showResults(this.value)" />
               <ul id="result"></ul>
             </div>
           </div>
-        <img src="../src/Ellipse 4.png" alt="" class="ellipse">
+          <img src="../src/Ellipse 4.png" alt="" class="ellipse">
+        </div>
+      </div>
       <div class="part-2">
         <div class="content">
           <h1>ПОПУЛЯРНІ ЗАПИТИ</h1>
@@ -87,6 +68,7 @@
         <img src="../src/Ellipse 5.png" alt="" class="ellipse">
       </div>
 	</main>
+  <script src='../js/choose_dish.js'></script>
   <footer>
     <div class="content">
     <img src="../src/youtube.svg" alt="">
