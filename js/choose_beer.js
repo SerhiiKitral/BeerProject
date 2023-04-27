@@ -25,7 +25,7 @@ Papa.parse(csvFilePath, {
         groups.forEach(function (rows, beerType) {
             const mealList = rows.map(function (row) {
                 const mealPhoto = row['meal_photourl'];
-                return `<li><div id="photo"><img src="${mealPhoto}" alt="${row['meal']}"></div><span>${row['meal']}</span><a href="choose dish.html" id="choose_dish">купити</a></li>`;
+                return `<li><div id="photo"><img src="${mealPhoto}" alt="${row['meal']}"></div><span>${row['meal']}</span><a href="https://glovoapp.com/" id="choose_dish">купити</a></li>`;
             }).join('');
             
             const beerPhoto = rows[0]['photourl'];
